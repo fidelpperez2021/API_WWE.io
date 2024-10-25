@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de la WWE</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Index.css"> <!-- Enlaza tu CSS personalizado aquí -->
+</head>
+<body class="d-flex flex-column min-vh-100"> <!-- Flexbox para el diseño -->
+
+    <!-- Encabezado -->
+    <header class="bg-dark text-white text-center py-4">
+        <h1>WWE NETWORK</h1>
+        <p>Explora luchadores, eventos y más</p>
+        <header class="text-center py-4">
+            <img src="https://www.wwe.com/f/styles/shows_header_xl/public/all/2024/08/20240816_Superstars_Header--08335ddce5bc971578fa2aa24bc0d571.jpg" alt="Banner WWE" class="img-fluid">
+            <img src="https://www.wwe.com/a/i/wwe_logo200w.svg" alt="Logo WWE" class="img-fluid logo-position"> 
+        </header>        
+    </header>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">WWE API</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#campeonatos">Campeonatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#combates">Combates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#eventos">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#facciones">Facciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#luchadores">Luchadores</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container mt-4 flex-grow-1">
+
+        <!-- Sección de Campeonatos -->
+        <section id="campeonatos">
+            <h2>Campeonatos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://www.wwe.com/f/styles/wwe_16_9_l/public/all/2024/04/TITLE_04192023gd_0062_Fin--b4ea60da7626c3ce7fe770d2f0955917.png" class="card-img-top" alt="Campeonato 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Campeonato Universal Indiscutible</h5>
+                            <p class="card-text">El Campeonato Universal Indiscutible es el título principal de la WWE, creado en 2016. Simboliza la máxima gloria en la marca SmackDown y ha sido defendido por campeones como Roman Reigns, destacándose por su diseño azul y dorado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://www.wwe.com/f/styles/wwe_16_9_l/public/all/2023/05/WWE_World_Championship--3f7deec341d4257875929ee8ab140834.png" class="card-img-top" alt="Campeonato 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Campeonato Mundial Pesado</h5>
+                            <p class="card-text">El Campeonato Mundial Pesado es uno de los títulos más icónicos de la WWE, con una historia que se remonta a 1905. Representa el prestigio y la excelencia en la lucha libre, habiendo sido ostentado por leyendas como Hulk Hogan y Ric Flair.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://www.wwe.com/f/styles/wwe_16_9_l/public/all/2019/11/_Intercontinental_Title_Belts_1920x1080_updated--7d94c38bf0d90f5cb2f3bad36490dd70.png" class="card-img-top" alt="Campeonato 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Campeonato Intercontinental</h5>
+                            <p class="card-text">El Campeonato Intercontinental, introducido en 1979, es un símbolo de habilidad y excelencia en el ring. Muchos campeones intercontinentales han ascendido al estrellato, y ha sido defendido por luchadores legendarios como Bret Hart y Shawn Michaels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Combates -->
+        <section id="combates" class="mt-4">
+            <h2>Combates</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://i.ytimg.com/vi/8y6EUHW7b-E/hq720.jpg" class="card-img-top" alt="Combate 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Cody Rhodes vs Gunther</h5>
+                            <p class="card-text">El combate entre Cody Rhodes y Gunther en Crown Jewel 2024 fue un emocionante enfrentamiento por el Campeonato Universal Indiscutible y el Campeonato Mundial Peso Pesado. Ambos luchadores, conocidos por su habilidad en el ring, ofrecieron una actuación intensa que mantuvo a los fanáticos al borde de sus asientos. La batalla simbolizó la lucha por la supremacía en la WWE, con cada competidor buscando demostrar su valía y dejar su huella en la historia de la compañía.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://i.ytimg.com/vi/wN6dSvual6U/hq720.jpg" class="card-img-top" alt="Combate 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nia Jax vs Liv Morgan</h5>
+                            <p class="card-text">El combate entre Nia Jax y Liv Morgan en Crown Jewel 2024 fue un esperado enfrentamiento "Champions vs. Champions", donde ambas luchadoras buscaron demostrar su supremacía sin títulos en juego. Nia Jax, conocida por su poderosa fuerza, se enfrentó a Liv Morgan, quien destacó por su agilidad y estrategia en el ring. El choque entre sus estilos de lucha ofreció a los fanáticos un espectáculo emocionante, resaltando la competitividad y la rivalidad en la división femenina de la WWE.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://www.wrestlezone.com/wp-content/uploads/sites/8/2023/10/Sami-Zayn-JD-McDonagh-WWE-Crown-Jewel.jpg" class="card-img-top" alt="Combate 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Sami Zayn vs JD McDonagh</h5>
+                            <p class="card-text">El combate entre Sami Zayn y JD McDonagh en Crown Jewel 2024 fue un emocionante enfrentamiento en el que ambos luchadores buscaron demostrar su habilidad y estrategia. Sami Zayn, conocido por su agilidad y carisma, se enfrentó a JD McDonagh, quien se destacó por su estilo técnico y su capacidad para dominar en el ring. Aunque no había títulos en juego, la rivalidad entre ambos hizo que el combate fuera intensamente competitivo, generando expectación entre los fanáticos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Eventos -->
+        <section id="eventos" class="mt-4">
+            <h2>Eventos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://www.voxcatch.fr/wp-content/uploads/2024/05/WWE-Crown-Jewel-2024.jpeg" class="card-img-top" alt="Evento 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Crown Jewel 2024</h5>
+                            <p class="card-text">Crown Jewel 2024 fue un evento destacado de la WWE que tuvo lugar el 20 de octubre en Riad, Arabia Saudita. Este espectáculo anual es conocido por presentar enfrentamientos de alto perfil y momentos emocionantes. En esta edición, varios campeones se enfrentaron en combates espectaculares, como el enfrentamiento entre Cody Rhodes y Gunther, así como Sami Zayn contra JD McDonagh, lo que aumentó la anticipación y la emoción entre los fanáticos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://img.solowrestling.com/images/131/tablet131284-wwe-rr.jpg" class="card-img-top" alt="Evento 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Rumble 2025</h5>
+                            <p class="card-text">El Royal Rumble 2025 está programado para celebrarse en febrero y promete ser uno de los eventos más emocionantes del calendario de la WWE. Este evento anual es conocido por su icónico combate de 30 hombres, donde los luchadores entran de a uno, y el último en pie obtiene una oportunidad por el campeonato en WrestleMania.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://static.toiimg.com/thumb/msid-113608489,width-400,resizemode-4/113608489.jpg" class="card-img-top" alt="Evento 3">
+                        <div class="card-body">
+                            <h5 class="card-title">WrestleMania</h5>
+                            <p class="card-text">WrestleMania 2025 se llevará a cabo los días 19 y 20 de abril, prometiendo ser uno de los eventos más espectaculares de la WWE. Este evento anual, conocido como "La Vitrina de los Inmortales", es el culmen de la temporada de lucha libre, donde las mayores rivalidades se resuelven en el escenario más grande.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Facciones -->
+        <section id="facciones" class="mt-4">
+            <h2>Facciones</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://cdn.vox-cdn.com/thumbor/9ZXGtEekGKNEghRwYxDOe00rywo=/67x0:1853x935/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25510847/20240627_SD_Bloodline_FC_tonight__53639aa2af06bca1913ae3260322e9a8.jpg" class="card-img-top" alt="Facción 1">
+                        <div class="card-body">
+                            <h5 class="card-title">The Bloodline</h5>
+                            <p class="card-text">The Bloodline (El Linaje en español) es un stable heel de lucha libre profesional de la empresa WWE en la marca SmackDown y Raw que está conformado actualmente por Solo Sikoa, Jacob Fatu, Tama Tonga y Tonga Loa. El nombre del stable proviene del hecho de que Jacob Fatu y Solo Sikoa son miembros de la familia Anoa'i.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://www.ewrestlingnews.com/wp-content/uploads/2024/08/Wyatt-Sicks-WWE-RAW-render.webp" class="card-img-top" alt="Facción 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Wyatt 6</h5>
+                            <p class="card-text">La facción "Wyatt 6" en la WWE está inspirada en el legado del fallecido Bray Wyatt. Después de su muerte, el grupo busca continuar el estilo enigmático y oscuro que caracterizaba a Bray, incorporando personajes que reflejan elementos de sus pasadas historias y alter egos. Los miembros incluyen a Uncle Howdy (interpretado por Bo Dallas), Sister Abigail (representada por Nikki Cross), y otros como Ramblin' Rabbit y Mercy the Buzzard. La facción debutó en un episodio de WWE Raw en 2024, con una puesta en escena que evoca lo sobrenatural y el misterio que siempre rodearon a las narrativas de Bray Wyatt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://cdn.wrestletalk.com/wp-content/uploads/2024/08/Judgment-Day-WWE-New-Member.jpeg" class="card-img-top" alt="Facción 3">
+                        <div class="card-body">
+                            <h5 class="card-title">The Judgment Day</h5>
+                            <p class="card-text">The Judgment Day (El Día del Juicio en español) es un stable heel de lucha libre profesional que actualmente se presenta en la promoción de lucha libre profesional WWE en la marca Raw, compuesto por Finn Bálor, Dominik Mysterio, JD McDonagh, Carlito, Liv Morgan y Raquel Rodríguez. Inicialmente fue dirigido por Edge y contó con Rhea Ripley y Damian Priest como miembros fundadores. El nombre del stable fue derivado de la serie de eventos pago por visión del mismo nombre realizado entre 1998 y 2009, con Edge en el cartel del evento de 2009.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Luchadores -->
+        <section id="luchadores" class="mt-4">
+            <h2>Luchadores</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://www.wwe.com/f/styles/talent_champion_xl/public/all/2024/09/CODY_04262024gd_0100_headSawp_(1)--9614b63ab3bbb8c9bedcfac02908b9d0.png" class="card-img-top" alt="Luchador 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Cody Rhodes</h5>
+                            <p class="card-text">Campeon universal de WWE.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://www.wwe.com/f/styles/talent_champion_xl/public/all/2024/06/LIV_05132024ca_023_Title_Profile--530195974e3839e08bdb34e41adbaed5.png" class="card-img-top" alt="Luchador 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Liv Morgan</h5>
+                            <p class="card-text">Campeona de RAW.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://www.wwe.com/f/styles/talent_champion_xl/public/all/2024/09/Jey_Uso_07062024rf_013_w_head_fake_IC_belt_Profile--5ff008e353e654ccd1d0a13d1a7ff8f4.png" class="card-img-top" alt="Luchador 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Main Event "Jey Uso"</h5>
+                            <p class="card-text">Campeon intercontinental.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 API de la WWE. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
